@@ -23,9 +23,9 @@ def get_filters():
     try:
         city = input (Fore.RED + 'What city would you like to explore? Chicago, New York City or Washington? ').lower()
         while (city not in cities):
-            print(Fore.BLUE + 'You entered ',city,'. Please try again as this city if not among the provided options.')
+            print(Fore.BLUE + 'You entered {}. Please try again as this city if not among the provided options.'.city)
             city = input(Fore.RED + 'Please choose a valid city: Chicago, New York City or Washington? ').lower()
-        print(Fore.BLUE + 'You selected ',city,'. Thank you for your input.')
+        print(Fore.BLUE + 'You selected {}. Thank you for your input.'.city)
     except KeyError:
             print('Error Encountered')
 
@@ -34,9 +34,9 @@ def get_filters():
     try:
         month = input(Fore.RED + 'What month would you like to look at? All, January, February, March, April, May or June? ').lower()
         while (month not in months):
-            print(Fore.BLUE + 'You entered ',month,'. Please try again as the month is not among the provided options.')
+            print(Fore.BLUE + 'You entered {}. Please try again as the month is not among the provided options.'.month)
             month = input(Fore.RED + 'Choose either a month from January to June, or choose All? ').lower()
-        print(Fore.BLUE + 'You selected ',month,'. Thank you for your input.')
+        print(Fore.BLUE + 'You selected {}. Thank you for your input.'.month)
     except KeyError:
             print ('Error Encountered')
 
@@ -45,9 +45,9 @@ def get_filters():
     try:
         day = input (Fore.RED + 'What day of the week would you like to explore? All, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday? ').lower()
         while (day not in days):
-            print(Fore.BLUE + 'You entered',day,'. Please try again as the month is not among the provided options.')
+            print(Fore.BLUE + 'You entered {}. Please try again as the month is not among the provided options.'.day)
             day = input(Fore.RED + 'Please choose a valid city: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or All? ').lower()
-        print(Fore.BLUE + 'You selected ',day,'. Thank you for your input.')
+        print(Fore.BLUE + 'You selected {}. Thank you for your input.'.day)
     except KeyError:
         print('Error Encountered')
     print(Fore.WHITE + '~'*40)
