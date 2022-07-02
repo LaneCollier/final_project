@@ -16,7 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
 
-    print(Fore.RED + 'Welcome to the US bikeshare database!')
+    print(Fore.RED + 'Hello! Welcome to the US bikeshare database!')
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     cities = ['chicago', 'new york city','washington']
