@@ -18,7 +18,7 @@ def get_filters():
 
     print(Fore.RED + 'Welcome to the US bikeshare database!')
 
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # TO DO: get user input for city (chicago, new york city, washington). 
     cities = ['chicago', 'new york city','washington']
     try:
         city = input (Fore.RED + 'What city would you like to explore? Chicago, New York City or Washington? ').lower()
